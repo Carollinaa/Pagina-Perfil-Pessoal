@@ -1,0 +1,133 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* para especificar coisas que eu vou usar durante toda página */
+:root{
+    --cor-de-fundo: #f0f4f8;
+    --cor-de-fundo-card: #fff;
+    --cor-do-texto: #1a202c;
+    --cor-primaria: #4299e1;
+    --cor-secundaria: #2b6cb0;
+    --fonte: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    --animacao: all 0.3s ease;
+}
+body{
+    font-family: var(--fonte)
+}
+.conteiner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+header{
+    background-color: var(--cor-de-fundo-card);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* para garantir que o header fique por cima de todos ou outros elementos da página */
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+.logo{
+    /* tamanho da fonte */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+.links-nav{
+    display: flex;
+    list-style: none;
+}
+.links-nav li{
+    margin-left: 2rem;
+}
+.links-nav a{
+    color: var(--cor-do-texto);
+    text-decoration: none;
+    transition: var(--animacao);
+}
+/* mudança quando o mouse for colocado em cima do elemento, no caso os links */
+.links-nav a:hover{
+    color: var(--cor-primaria);
+}
+main{
+    margin-top: 5rem;
+}
+section{
+    padding: 6rem 0;
+}
+.dev{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.texto-dev h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+.texto-dev p{
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+}
+.botao-contato{
+    background-color: var(--cor-primaria);
+    text-decoration: none;
+    color: #fff;
+    padding: 0.75rem 1.4rem;
+    border-radius: 20px;
+    transition: var(--animacao);
+}
+.botao-contato:hover{
+    background-color: var(--cor-secundaria);
+}
+.foto-dev{
+    position: relative;
+}
+.minha-foto{
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    /* elemento que faz a imagem caber certinho na div */
+    object-fit: cover;
+}
+.skills-grid{
+    display: grid;
+    /* repeat() é para o padrão ser repetido em todos os elementos e auto-fit é pra ajustar altomaticamente os
+    elementos... e minmax() é para determinar a largula mínima e máxima.*/
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+.skills-item{
+    background-color: var(--cor-de-fundo-card);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: var(--animacao);
+}
+.skills-item:hover{
+    transform: translateY(-10px);
+}
+.skills-icon{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
