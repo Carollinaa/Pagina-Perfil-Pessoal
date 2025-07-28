@@ -205,3 +205,14 @@ button{
 .titulo-contato{
     color: #fff;
 }
+footer{
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+    padding: 2rem 0;
+}
+.icons-fotero{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1rem;
+}
