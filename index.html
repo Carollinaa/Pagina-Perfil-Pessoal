@@ -22,7 +22,7 @@
         <section id="sobre" class="dev conteiner fade-in" >
             <div class="texto-dev">
                 <h1>Carolina Santos</h1>
-                <p>Apresentação</p>
+                <p>Desenvolvedora FrontEnd apaixonada por criar soluçôes criativas e úteis!</p>
                 <a class="botao-contato" href="#Contato">Entre em contato</a>
             </div>
             <div class="foto-dev">
@@ -38,21 +38,76 @@
                     <p>JavaScript, CSS, HTML</p>
                 </div>
                 <div class="skills-item">
-                    <div class="skills-icon"></div>
+                    <div class="skills-icon">&#129521;&#65039;</div>
                     <h3>BackEnd</h3>
                     <p>Python, C,</p>
                 </div>
                 <div class="skills-item">
-                    <div class="skills-icon"></div>
+                    <div class="skills-icon">&#128738;</div>
                     <h3>Banco de dados</h3>
                     <p>PostgreSQl</p>
                 </div>
                 <div class="skills-item">
-                    <div class="skills-icon"></div>
+                    <div class="skills-icon">&#128736;</div>
                     <h3>Ferramentas</h3>
                     <p>Git, GitHub, VScode</p>
                 </div>
             </div>
+        </section>
+        <section id="projetos" class="conteiner fade-in">
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">TimePomodoro</h3>
+                    <p>Projeto de sistema embarcado, "Timer Pomodoro Inteligente" desenvolvido
+                        com a Raspberry Pi Pico, que integra diversos componentes de hardware e
+                        bibliotecas para criar uma experiência visual e interativa de gerenciamento
+                        de tempo.</p>
+                    <div class="projeto-tags">
+                        <span>Linguagem C</span>
+                        <span>Raspbarry Pi Pico W</span>
+                        <span>BitDogLab</span>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">Lógica de Programação</h3>
+                    <p>Esta lista de exercícios foi desenvolvida para aprimorar habilidades
+                        de raciocínio lógico e pensamento crítico, abordando diversos tópicos de
+                        lógica matemática e computacional.</p>
+                    <div class="projeto-tags">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <h3 class="titulo-projeto">Projeto de Prática FrontEnd</h3>
+                    <p>Projeto com foco em fundamentos da construção de páginas web modernas com
+                        estruturação semântica, estilização com CSS, responsividade com Grid/Flexbox, formulários e navegação.</p>
+                    <div class="projeto-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contato fade-in">
+            <h2 class="titulo-contato">Entre em contato!</h2>
+            <form class="contato-form">
+                <div class="grupo-formulario">
+                    <label for="nome">Nome</label>
+                    <!-- required não permite que o úsuario deixe o campo vazio -->
+                    <input id="nome" name="nome" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+                <!-- botão de envio -->
+                <button type="submit">Mandar</button>
+            </form>
         </section>
     </main>
 </body>
